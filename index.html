@@ -8,13 +8,14 @@
 </head>
 
 <body>
+    <!-- HEADER -->
     <header>
         <h1>Samuel <span>Uelton</span> <span class="logo-code">&lt;/&gt;</span></h1>
         <nav class="header-nav">
             <ul class="navegacao-primaria">
                 <li><a href="#inicio">Início</a></li>
-                <li><a href="#projetos">Projetos</a></li>
                 <li><a href="#sobre">Sobre Mim</a></li>
+                <li><a href="#projetos">Projetos</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
@@ -31,8 +32,9 @@
             </a>
         </div>
     </header>
-    <section aria-label="seção curriculo download Samuel" class="section-div">
 
+    <!-- SEÇÃO INICIAL -->
+    <section id="inicio" aria-label="seção curriculo download Samuel" class="section-div reveal">
         <div>
             <h2>Olá, prazer ter você aqui!</h2>
             <h2 class="digitando">{ Desenvolvedor Full Stack Júnior }</h2>
@@ -41,12 +43,12 @@
         </div>
         <img src="IMG/minhafoto.png" alt="Ilustra">
     </section>
+
     <main>
-        <article aria-label="seção sobre mim" class="sobre">
-
+        <!-- SEÇÃO SOBRE -->
+        <article id="sobre" aria-label="seção sobre mim" class="sobre reveal reveal-delay-1">
             <div class="sobre_conteudo">
-                <div class="sobre_titulo">
-
+                <div class="sobre_titulo reveal reveal-left">
                     <p class="Eu">Quem eu sou</p>
                     <h2 class="sobremim">Sobre</h2>
                     <p>Sou um <strong>Desenvolvedor Full-Stack Jr </strong> apaixonado por transformar ideias em realidade digital. Com experiência em diversas linguagens de programação, estou sempre em busca de novos desafios para aprimorar minhas habilidades e contribuir para projetos inovadores. Estou sempre estudando e me atualizando sobre as últimas tendências do desenvolvimento, me especializando em tecnologias como <strong>JavaScript, React, Node.js, Python</strong> e bancos de dados como <strong>MySQL</strong> e <strong>MongoDB</strong> para oferecer soluções modernas e eficientes.</p>
@@ -56,153 +58,114 @@
                         <span></span>
                     </div>
                 </div>
-                <div>
+
+                <!-- CARD GLASS EFFECT -->
+                <div class="reveal reveal-right reveal-delay-2">
                     <div class="tilt-wrapper">
                         <div class="glass-effect overflow-hidden rounded-xl p-8" style="font-family:var(--font-family-mono);font-size:0.875rem;line-height:1.6">
-
                             <div class="mb-6 flex items-center gap-2 border-b pb-4" style="border-color:var(--color-border)">
-                                <div class="h-3 w-3 rounded-full bg-red-500">
-
-                                </div>
-                                <div class="h-3 w-3 rounded-full bg-yellow-500">
-                                </div>
-                                <div class="h-3 w-3 rounded-full bg-green-500">
-
-                                </div>
+                                <div class="h-3 w-3 rounded-full bg-red-500"></div>
+                                <div class="h-3 w-3 rounded-full bg-yellow-500"></div>
+                                <div class="h-3 w-3 rounded-full bg-green-500"></div>
                                 <span class="ml-4 text-xs" style="color:var(--color-text-muted)">developer.js</span>
                             </div>
-                            <div class="space-y-2"><code class="font-mono text-sm lg:text-base"><div class="blink"><span class="mr-2 text-pink-500">const</span><span class="mr-2 text-white">dev</span><span class="mr-2 text-pink-500">=</span><span class="text-gray-400">{</span></div><div><span class="mr-2 ml-4 text-white lg:ml-8">name:</span><span class="text-gray-400">'</span><span class="text-amber-300">Samuel</span><span class="text-gray-400">',</span></div><div><span class="mr-2 ml-4 text-white lg:ml-8">age:</span><span class="text-gray-400">'<span class="text-amber-300">23</span><span class="text-gray-400">'<span class="text-gray-400">,</span></div><div><span class="mr-2 ml-4 text-white lg:ml-8">role:</span><span class="text-gray-400">'</span><span class="text-amber-300">Full-Stack Developer Jr</span><span class="text-gray-400"></span><span class="text-gray-400">',</span></div><div class="mr-2 ml-4 lg:ml-8"><span class="text-white">skills: </span><span class="text-gray-400">['</span><span class="text-amber-300">Html</span><span class="text-gray-400">', '</span><span class="text-amber-300">Css</span><span class="text-gray-400">', '</span><span class="text-amber-300">JavaScript</span><span class="text-gray-400">', '</span><span class="text-amber-300">React</span><span class="text-gray-400">', '</span><span class="text-amber-300">MySQL</span><span class="text-gray-400">', '</span><span class="text-amber-300">Python</span><span class="text-gray-400">', '</span><span class="text-amber-300">Node.Js</span><span class="text-gray-400">']</span></span>
-                            </div><div><span class="mr-2 ml-4 text-white lg:ml-8">quickLearner:
-
-                                </span><span class="text-orange-400">true
-        
-                                </span><span class="text-gray-400">,</span>
+                            <div class="space-y-2">
+                                <code class="font-mono text-sm lg:text-base">
+                                    <div class="blink"><span class="mr-2 text-pink-500">const</span><span class="mr-2 text-white">dev</span><span class="mr-2 text-pink-500">=</span><span class="text-gray-400">{</span></div>
+                                    <div><span class="mr-2 ml-4 text-white lg:ml-8">name:</span><span class="text-gray-400">'</span><span class="text-amber-300">Samuel</span><span class="text-gray-400">',</span></div>
+                                    <div><span class="mr-2 ml-4 text-white lg:ml-8">age:</span><span class="text-gray-400">'<span class="text-amber-300">23</span><span class="text-gray-400">'<span class="text-gray-400">,</span></div>
+                                    <div><span class="mr-2 ml-4 text-white lg:ml-8">role:</span><span class="text-gray-400">'</span><span class="text-amber-300">Full-Stack Developer Jr</span><span class="text-gray-400"></span><span class="text-gray-400">',</span></div>
+                                    <div class="mr-2 ml-4 lg:ml-8"><span class="text-white">skills: </span><span class="text-gray-400">['</span><span class="text-amber-300">Html</span><span class="text-gray-400">', '</span><span class="text-amber-300">Css</span><span class="text-gray-400">', '</span><span class="text-amber-300">JavaScript</span><span class="text-gray-400">', '</span><span class="text-amber-300">React</span><span class="text-gray-400">', '</span><span class="text-amber-300">MySQL</span><span class="text-gray-400">', '</span><span class="text-amber-300">Python</span><span class="text-gray-400">', '</span><span class="text-amber-300">Node.Js</span><span class="text-gray-400">']</span></span></div>
+                                    <div><span class="mr-2 ml-4 text-white lg:ml-8">quickLearner:</span><span class="text-orange-400">true</span><span class="text-gray-400">,</span></div>
+                                    <div><span class="mr-2 ml-4 text-white lg:ml-8">problemSolver:</span><span class="text-orange-400">true</span><span class="text-gray-400">,</span></div>
+                                    <div><span class="mr-2 ml-4 text-green-400 lg:ml-8">hireable:</span><span class="text-orange-400">function</span><span class="text-gray-400">() {</span></div>
+                                    <div><span class="mr-2 ml-8 text-orange-400 lg:ml-16">return</span><span class="text-gray-400">(</span></div>
+                                    <div><span class="ml-12 text-cyan-400 lg:ml-24">this.</span><span class="mr-2 text-white">quickLearner</span><span class="text-amber-300">&amp;&amp;</span></div>
+                                    <div><span class="ml-12 text-cyan-400 lg:ml-24">this.</span><span class="mr-2 text-white">problemSolver</span><span class="text-amber-300">&amp;&amp;</span></div>
+                                    <div><span class="ml-12 text-cyan-400 lg:ml-24">this.</span><span class="mr-2 text-white">skills.length</span><span class="mr-2 text-amber-300">&gt;=</span><span class="text-orange-400">3</span></div>
+                                    <div><span class="mr-2 ml-8 text-gray-400 lg:ml-16">);</span></div>
+                                    <div><span class="ml-4 text-gray-400 lg:ml-8">},</span></div>
+                                    <div><span class="text-gray-400">};</span></div>
+                                </code>
                             </div>
-                            <div>
-                                <span class="mr-2 ml-4 text-white lg:ml-8">problemSolver:</span><span class="text-orange-400">true</span><span class="text-gray-400">,</span>
-                            </div>
-                            <div>
-                                <span class="mr-2 ml-4 text-green-400 lg:ml-8">hireable:</span><span class="text-orange-400">function</span><span class="text-gray-400">() {</span>
-                            </div>
-                            <div><span class="mr-2 ml-8 text-orange-400 lg:ml-16">return</span><span class="text-gray-400">(</span>
-                            </div>
-                            <div><span class="ml-12 text-cyan-400 lg:ml-24">this.</span><span class="mr-2 text-white">quickLearner</span><span class="text-amber-300">&amp;&amp;</span>
-                            </div>
-                            <div><span class="ml-12 text-cyan-400 lg:ml-24">this.</span><span class="mr-2 text-white">problemSolver</span><span class="text-amber-300">&amp;&amp;</span>
-                            </div>
-                            <div><span class="ml-12 text-cyan-400 lg:ml-24">this.</span><span class="mr-2 text-white">skills.length</span><span class="mr-2 text-amber-300">&gt;=</span><span class="text-orange-400">3</span>
-                            </div>
-                            <div><span class="mr-2 ml-8 text-gray-400 lg:ml-16">);</span>
-                            </div>
-                            <div><span class="ml-4 text-gray-400 lg:ml-8">},</span>
-                            </div>
-                            <div><span class="text-gray-400">};</span>
-                            </div></code>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
         </article>
 
-    <div class="minhas-tecnologias" aria-label="Linguagens e tecnologias">
-
-        <div class="habilidades">
-            <span class="skill-badge">
-                <img src="icons/html.png" alt="HTML" class="skill-icon">
-                HTML
-            </span>
-            <span class="skill-badge">
-                <img src="icons/css-3.png" alt="CSS" class="skill-icon">
-                CSS
-            </span>
-            <span class="skill-badge">
-                <img src="icons/js.png" alt="JavaScript" class="skill-icon">
-                JavaScript
-            </span>
-            <span class="skill-badge ">
-                <img src="icons/react.png" alt="React" class="skill-icon">
-                React
-            </span>
-            <span class="skill-badge">
-                <img src="icons/nodejs.png" alt="Node.js" class="skill-icon">
-                Node.js
-            </span>
-            <span class="skill-badge">
-                <img src="icons/python.png" alt="Python" class="skill-icon">
-                Python
-            </span>
-            <span class="skill-badge">
-                <img src="icons/mysql.png" alt="MySQL" class="skill-icon">
-                MySQL
-            </span>
-            <span class="skill-badge">
-                <img src="icons/database.png" alt="MongoDB" class="skill-icon">
-                MongoDB
-            </span>
-            <span class="skill-badge">
-                <img src="icons/git.png" alt="Git" class="skill-icon">
-                Git
-            </span>
-            <span class="skill-badge">
-                <img src="icons/github.png" alt="GitHub" class="skill-icon">
-                GitHub
-            </span>
-            <span class="skill-badge">
-                <img src="icons/typescript.png" alt="TypeScript" class="skill-icon">
-                TypeScript
-            </span>
-            <!-- duplicado para efeito contínuo -->
-            <span class="skill-badge">
-                <img src="icons/html.png" alt="HTML" class="skill-icon">
-                HTML
-            </span>
-            <span class="skill-badge">
-                <img src="icons/css-3.png" alt="CSS" class="skill-icon">
-                CSS
-            </span>
-            <span class="skill-badge">
-                <img src="icons/js.png" alt="JavaScript" class="skill-icon">
-                JavaScript
-            </span>
-            <span class="skill-badge">
-                <img src="icons/react.png" alt="React" class="skill-icon">
-                React
-            </span>
-            <span class="skill-badge">
-                <img src="icons/nodejs.png" alt="Node.js" class="skill-icon">
-                Node.js
-            </span>
-            <span class="skill-badge">
-                <img src="icons/python.png" alt="Python" class="skill-icon">
-                Python
-            </span>
-            <span class="skill-badge">
-                <img src="icons/mysql.png" alt="MySQL" class="skill-icon">
-                MySQL
-            </span>
-            <span class="skill-badge">
-                <img src="icons/database.png" alt="MongoDB" class="skill-icon">
-                MongoDB
-            </span>
-            <span class="skill-badge">
-                <img src="icons/git.png" alt="Git" class="skill-icon">
-                Git
-            </span>
-            <span class="skill-badge">
-                <img src="icons/github.png" alt="GitHub" class="skill-icon">
-                GitHub
-            </span>
-            <span class="skill-badge">
-                <img src="icons/typescript.png" alt="TypeScript" class="skill-icon">
-                TypeScript
-            </span>
+        <!-- SEÇÃO TECNOLOGIAS -->
+        <div id="projetos" class="minhas-tecnologias reveal reveal-delay-2" aria-label="Linguagens e tecnologias">
+            <div class="habilidades">
+                <span class="skill-badge"><img src="icons/html.png" alt="HTML" class="skill-icon">HTML</span>
+                <span class="skill-badge"><img src="icons/css-3.png" alt="CSS" class="skill-icon">CSS</span>
+                <span class="skill-badge"><img src="icons/js.png" alt="JavaScript" class="skill-icon">JavaScript</span>
+                <span class="skill-badge"><img src="icons/react.png" alt="React" class="skill-icon">React</span>
+                <span class="skill-badge"><img src="icons/nodejs.png" alt="Node.js" class="skill-icon">Node.js</span>
+                <span class="skill-badge"><img src="icons/python.png" alt="Python" class="skill-icon">Python</span>
+                <span class="skill-badge"><img src="icons/mysql.png" alt="MySQL" class="skill-icon">MySQL</span>
+                <span class="skill-badge"><img src="icons/database.png" alt="MongoDB" class="skill-icon">MongoDB</span>
+                <span class="skill-badge"><img src="icons/git.png" alt="Git" class="skill-icon">Git</span>
+                <span class="skill-badge"><img src="icons/github.png" alt="GitHub" class="skill-icon">GitHub</span>
+                <span class="skill-badge"><img src="icons/typescript.png" alt="TypeScript" class="skill-icon">TypeScript</span>
+                
+                <!-- Duplicado para efeito contínuo -->
+                <span class="skill-badge"><img src="icons/html.png" alt="HTML" class="skill-icon">HTML</span>
+                <span class="skill-badge"><img src="icons/css-3.png" alt="CSS" class="skill-icon">CSS</span>
+                <span class="skill-badge"><img src="icons/js.png" alt="JavaScript" class="skill-icon">JavaScript</span>
+                <span class="skill-badge"><img src="icons/react.png" alt="React" class="skill-icon">React</span>
+                <span class="skill-badge"><img src="icons/nodejs.png" alt="Node.js" class="skill-icon">Node.js</span>
+                <span class="skill-badge"><img src="icons/python.png" alt="Python" class="skill-icon">Python</span>
+                <span class="skill-badge"><img src="icons/mysql.png" alt="MySQL" class="skill-icon">MySQL</span>
+                <span class="skill-badge"><img src="icons/database.png" alt="MongoDB" class="skill-icon">MongoDB</span>
+                <span class="skill-badge"><img src="icons/git.png" alt="Git" class="skill-icon">Git</span>
+                <span class="skill-badge"><img src="icons/github.png" alt="GitHub" class="skill-icon">GitHub</span>
+                <span class="skill-badge"><img src="icons/typescript.png" alt="TypeScript" class="skill-icon">TypeScript</span>
+            </div>
         </div>
-    </div>
 
+        <!-- SEÇÃO PROJETOS -->
+        <div id="lista-projetos" class="projetos-container reveal reveal-delay-2" aria-label="Projetos desenvolvidos">
+            <h2>Projetos</h2>
+            <div class="projetos-grid projetos-animar">
+                <div class="projeto-card">
+                    <img src="IMG/dashboard financeiro.png" alt="Dashboard de Gastos" class="projeto-img">
+                    <h3>Dashboard de Gastos</h3>
+                    <p>Um dashboard onde você pode monitorar e acompanhar seus gastos mensais de forma visual, organizada e intuitiva, facilitando o controle financeiro do dia a dia.</p>
+                    <div class="projeto-techs">
+                        <img src="icons/react.png" alt="React" title="React">
+                        <img src="icons/js.png" alt="JavaScript" title="JavaScript">
+                        <img src="icons/html.png" alt="HTML" title="HTML">
+                        <img src="icons/css-3.png" alt="CSS" title="CSS">
+                        <img src="icons/nodejs.png" alt="Node.js" title="Node.js">
+                    </div>
+                    <div class="projeto-actions">
+                        <a href="https://gastos-pessoais-taupe.vercel.app/login" target="_blank" rel="noopener noreferrer" class="btn-projeto btn-primary">Acessar projeto</a>
+                        <a href="https://github.com/bysamuell/Gastos-Pessoais" target="_blank" rel="noopener noreferrer" class="btn-projeto btn-secondary">Ver repositório</a>
+                    </div>
+                </div>
+
+                <div class="projeto-card">
+                    <h3>Projeto 2</h3>
+                    <p>Em construção</p>
+                    <div class="projeto-actions">
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="btn-projeto btn-primary">Acessar projeto</a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="btn-projeto btn-secondary">Ver repositório</a>
+                    </div>
+                </div>
+
+                <div class="projeto-card">
+                    <h3>Projeto 3</h3>
+                    <p>Em construção</p>
+                    <div class="projeto-actions">
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="btn-projeto btn-primary">Acessar projeto</a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="btn-projeto btn-secondary">Ver repositório</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
     <script src="script.js"></script>
 </body>
-
 </html>
