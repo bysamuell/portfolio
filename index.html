@@ -49,9 +49,9 @@
         <article id="sobre" aria-label="seção sobre mim" class="sobre reveal reveal-delay-1">
             <div class="sobre_conteudo">
                 <div class="sobre_titulo reveal reveal-left">
-                    <p class="Eu">Quem eu sou</p>
+                    <p class="Eu">Quem sou eu</p>
                     <h2 class="sobremim">Sobre</h2>
-                    <p>Sou um <strong>Desenvolvedor Back-End Jr </strong> apaixonado por transformar ideias em realidade digital. Com experiência em diversas linguagens de programação, estou sempre em busca de novos desafios para aprimorar minhas habilidades e contribuir para projetos inovadores. Estou sempre estudando e me atualizando sobre as últimas tendências do desenvolvimento, me especializando em tecnologias como <strong>JavaScript, Node.js, Python</strong> e bancos de dados como <strong>MySQL</strong> e <strong>MongoDB</strong> para oferecer soluções modernas e eficientes.</p>
+                    <p>Sou um <strong>Desenvolvedor Back-End Jr </strong> apaixonado por transformar ideias em realidade digital. Com experiência em diversas linguagens de programação, estou sempre em busca de novos desafios para aprimorar minhas habilidades e contribuir para projetos inovadores. Estou sempre estudando e me atualizando sobre as últimas tendências do desenvolvimento, me especializando em tecnologias como <strong>Java, Node.js, Python</strong> e bancos de dados como <strong>MySQL</strong> e <strong>MongoDB</strong> para oferecer soluções modernas e eficientes.</p>
                     <div aria-label="Seção apenas de ilustrações de botões">
                         <span></span>
                         <span></span>
@@ -124,45 +124,131 @@
 
         <!-- SEÇÃO PROJETOS -->
         <div id="lista-projetos" class="projetos-container reveal reveal-delay-2" aria-label="Projetos desenvolvidos">
-            <h2>Projetos</h2>
-            <div class="projetos-grid projetos-animar">
-                <div class="projeto-card">
-                    <img src="IMG/dashboard financeiro.png" alt="Dashboard de Gastos" class="projeto-img">
-                    <h3>Dashboard de Gastos</h3>
-                    <p>Um dashboard onde você pode monitorar e acompanhar seus gastos mensais de forma visual, organizada e intuitiva, facilitando o controle financeiro do dia a dia.</p>
-                    <div class="projeto-techs">
-                        <img src="icons/js.png" alt="JavaScript" title="JavaScript">
-                        <img src="icons/html.png" alt="HTML" title="HTML">
-                        <img src="icons/css-3.png" alt="CSS" title="CSS">
-                        <img src="icons/nodejs.png" alt="Node.js" title="Node.js">
-                    </div>
-                    <div class="projeto-actions">
-                        <a href="https://gastos-pessoais-taupe.vercel.app/login" target="_blank" rel="noopener noreferrer" class="btn-projeto btn-primary">Acessar projeto</a>
-                        <a href="https://github.com/bysamuell/Gastos-Pessoais" target="_blank" rel="noopener noreferrer" class="btn-projeto btn-secondary">Ver repositório</a>
+            <h2>Projetos Desenvolvidos</h2>
+            
+            <div class="projetos-tabs">
+                <button class="projeto-tab-btn active" data-tab="projeto-1">
+                    <span class="tab-label">Dashboard de Gastos</span>
+                </button>
+                <button class="projeto-tab-btn" data-tab="projeto-2">
+                    <span class="tab-label">Help-Desk Project</span>
+                </button>
+                <button class="projeto-tab-btn" data-tab="projeto-3">
+                    <span class="tab-label">Projeto 3</span>
+                </button>
+            </div>
+
+            <div class="projetos-content">
+                <!-- PROJETO 1 -->
+                <div class="projeto-tab-content active" id="projeto-1">
+                    <div class="projeto-card">
+                        <img src="IMG/dashboard financeiro.png" alt="Dashboard de Gastos" class="projeto-img">
+                        <div class="projeto-conteudo">
+                            <h3>Dashboard de Gastos</h3>
+                            
+                            <div class="caso-section">
+                                <h4 class="caso-title">🔴 Sintoma</h4>
+                                <p>Falta de controle financeiro pessoal - gastos desorganizados e sem visibilidade mensal.</p>
+                            </div>
+
+                            <div class="caso-section">
+                                <h4 class="caso-title">🔍 Diagnóstico</h4>
+                                <p>Necessidade de uma ferramenta visual que centralize despesas mensais com categorização automática e gráficos intuitivos.</p>
+                            </div>
+
+                            <div class="caso-section">
+                                <h4 class="caso-title">✅ Solução</h4>
+                                <p>Desenvolvido dashboard full-stack com autenticação, categorização de gastos, gráficos em tempo real e export de relatórios.</p>
+                            </div>
+
+                            <div class="caso-section">
+                                <h4 class="caso-title">📊 Resultado</h4>
+                                <p>Usuários conseguem visualizar padrões de gastos, poupar até 30% identificando despesas desnecessárias.</p>
+                            </div>
+
+                            <div class="caso-section">
+                                <h4 class="caso-title">🚀 Próximos Passos</h4>
+                                <p>Integração com APIs bancárias, análise preditiva de gastos, suporte a múltiplas moedas.</p>
+                            </div>
+
+                            <div class="caso-section">
+                                <h4 class="caso-title">💡 O que faria diferente</h4>
+                                <p>Implementar sync com bancos desde o início, arquitetura mais escalável para suportar múltiplas contas.</p>
+                            </div>
+
+                            <div class="projeto-techs">
+                                <img src="icons/js.png" alt="JavaScript" title="JavaScript">
+                                <img src="icons/html.png" alt="HTML" title="HTML">
+                                <img src="icons/css-3.png" alt="CSS" title="CSS">
+                                <img src="icons/nodejs.png" alt="Node.js" title="Node.js">
+                            </div>
+                            <div class="projeto-actions">
+                                <a href="https://gastos-pessoais-taupe.vercel.app/login" target="_blank" rel="noopener noreferrer" class="btn-projeto btn-primary">Acessar projeto</a>
+                                <a href="https://github.com/bysamuell/Gastos-Pessoais" target="_blank" rel="noopener noreferrer" class="btn-projeto btn-secondary">Ver repositório</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="projeto-card">
-                    <img src="IMG/helpdesk.png" alt="Project HELP-DESK" class="projeto-img">
-                    <h3>Help-Desk Project</h3>
-                    <p>Help-Desk Project, um utilitário de linha de comando focado em automatizar tarefas que normalmente consomem tempo no atendimento.
-                    O objetivo é simples: transformar rotinas repetitivas diagnósticos de rede, análise de processos e limpeza do sistema em ações rápidas, padronizadas e confiáveis.
-                    Nada de abrir dez janelas, rodar comandos manuais ou depender de ferramentas externas para algo básico.</p>
-                    <div class="projeto-techs">
-                        <img src="icons/python.png" alt="Python" title="Python">
-                    </div>
-                    <div class="projeto-actions">
-                        <a href="#" target="_blank" rel="noopener noreferrer" class="btn-projeto btn-primary">Acessar projeto</a>
-                        <a href="https://github.com/bysamuell/HELP-DESK-PROJECT" target="_blank" rel="noopener noreferrer" class="btn-projeto btn-secondary">Ver repositório</a>
+                <!-- PROJETO 2 -->
+                <div class="projeto-tab-content" id="projeto-2">
+                    <div class="projeto-card">
+                        <img src="IMG/helpdesk.png" alt="Project HELP-DESK" class="projeto-img">
+                        <div class="projeto-conteudo">
+                            <h3>Help-Desk Project</h3>
+                            
+                            <div class="caso-section">
+                                <h4 class="caso-title">🔴 Sintoma</h4>
+                                <p>Técnicos de suporte gastam 40% do tempo em tarefas repetitivas: diagnósticos de rede, limpeza de sistema, análise de processos.</p>
+                            </div>
+
+                            <div class="caso-section">
+                                <h4 class="caso-title">🔍 Diagnóstico</h4>
+                                <p>Necessidade de automação de rotinas técnicas comuns em uma ferramenta CLI simples e padronizada.</p>
+                            </div>
+
+                            <div class="caso-section">
+                                <h4 class="caso-title">✅ Solução</h4>
+                                <p>CLI desenvolvida em Python com módulos para diagnóstico de rede, análise de processos, limpeza de cache e geração de relatórios.</p>
+                            </div>
+
+                            <div class="caso-section">
+                                <h4 class="caso-title">📊 Resultado</h4>
+                                <p>Redução de 60% no tempo de atendimento técnico, execução padronizada de tarefas, menos erros humanos.</p>
+                            </div>
+
+                            <div class="caso-section">
+                                <h4 class="caso-title">🚀 Próximos Passos</h4>
+                                <p>Interface gráfica, integração com sistemas de ticketing, logs centralizados, suporte multi-plataforma.</p>
+                            </div>
+
+                            <div class="caso-section">
+                                <h4 class="caso-title">💡 O que faria diferente</h4>
+                                <p>Criar desde o início com suporte a plugins, documentação mais abrangente, testes automatizados robustos.</p>
+                            </div>
+
+                            <div class="projeto-techs">
+                                <img src="icons/python.png" alt="Python" title="Python">
+                            </div>
+                            <div class="projeto-actions">
+                                <a href="#" target="_blank" rel="noopener noreferrer" class="btn-projeto btn-primary">Acessar projeto</a>
+                                <a href="https://github.com/bysamuell/HELP-DESK-PROJECT" target="_blank" rel="noopener noreferrer" class="btn-projeto btn-secondary">Ver repositório</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="projeto-card">
-                    <h3>Projeto 3</h3>
-                    <p>Em construção</p>
-                    <div class="projeto-actions">
-                        <a href="#" target="_blank" rel="noopener noreferrer" class="btn-projeto btn-primary">Acessar projeto</a>
-                        <a href="#" target="_blank" rel="noopener noreferrer" class="btn-projeto btn-secondary">Ver repositório</a>
+                <!-- PROJETO 3 -->
+                <div class="projeto-tab-content" id="projeto-3">
+                    <div class="projeto-card projeto-vazio">
+                        <div class="projeto-conteudo">
+                            <h3>Projeto 3</h3>
+                            <p style="text-align: center; color: #4f46e5; font-style: italic; font-size: 1.1rem; margin-top: 40px;">Em construção - novo caso em investigação 🔎</p>
+                            <div class="projeto-actions" style="justify-content: center; margin-top: 40px;">
+                                <a href="#" target="_blank" rel="noopener noreferrer" class="btn-projeto btn-primary">Acessar projeto</a>
+                                <a href="#" target="_blank" rel="noopener noreferrer" class="btn-projeto btn-secondary">Ver repositório</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

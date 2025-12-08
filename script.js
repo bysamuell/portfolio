@@ -87,3 +87,23 @@ if (projetosSection && projetosGrid && 'IntersectionObserver' in window) {
 
   projetosObserver.observe(projetosSection);
 }
+
+// Funcionalidade de abas de projetos
+document.addEventListener('DOMContentLoaded', function() {
+  const tabBtns = document.querySelectorAll('.projeto-tab-btn');
+  const tabContents = document.querySelectorAll('.projeto-tab-content');
+
+  tabBtns.forEach(btn => {
+    btn.addEventListener('click', function() {
+      const tabId = this.getAttribute('data-tab');
+      
+      // Remove active de todos os botões e conteúdos
+      tabBtns.forEach(b => b.classList.remove('active'));
+      tabContents.forEach(content => content.classList.remove('active'));
+      
+      // Adiciona active ao botão e conteúdo clicado
+      this.classList.add('active');
+      document.getElementById(tabId).classList.add('active');
+    });
+  });
+});
