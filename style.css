@@ -35,7 +35,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 10;
-    backdrop-filter: blur(18px);
+    
 }
 
 header h1 {
@@ -445,6 +445,7 @@ code {
     gap: 6px;
     margin-bottom: 14px;
 }
+
 
 .projeto-techs img {
     width: 22px;
