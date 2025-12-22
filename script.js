@@ -1,11 +1,11 @@
 // Efeito de digitação no título
 function ativaLetra(elemento) {
   if (!elemento) return;
-  const arrTexto = elemento.innerHTML.split("");
-  elemento.innerHTML = '';
+  const arrTexto = elemento.textContent.split("");
+  elemento.textContent = '';
   arrTexto.forEach((letra, i) => {
     setTimeout(() => {
-      elemento.innerHTML += letra;
+      elemento.textContent += letra;
     }, i * 75);
   });
 }
